@@ -63,13 +63,15 @@ After you walked through the installation process you will need to copy the EFI 
 
 ### Fixes
 
+USB = https://github.com/Sniki/OS-X-USB-Inject-All/releases from this site, download the release zip file, extract it, use the kext file in EFI/OC/Kexts folder.
+
 Generate the SMBIOS - [dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios)
 
 Smooth scrolling - [MOS](https://mos.caldis.me/)
 
 Fix Mini Jack output - [ComboJack](https://github.com/hackintosh-stuff/ComboJack/tree/master/ComboJack_Installer)
 
-Disable log on boot - remove ```-v``` from NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args in your config.plist, then choose "reset NVRAM" option in OpenCore picker.
+Disable log on boot - remove ```-v``` from NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args in your config.plist, then choose "reset NVRAM" option in OpenCore picker. Or "sudo nvram boot- args=" in the terminal and restart (from https://www.easeus.com/knowledge-center/verbose-mode-mac.html)
 
 Fixing sleep and hibernation - [dortania](https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html)
 
